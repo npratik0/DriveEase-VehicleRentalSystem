@@ -1,0 +1,112 @@
+/* General Container */
+.login-container {
+    min-height: 100vh;
+    background-color: #e3f2fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Logo */
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1976d2;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    color: #1976d2;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  /* Password Field with Show/Hide Button */
+  .password-group {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #1976d2;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Button */
+  .login-button {
+    width: 100%;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Sign Up Link */
+  .signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .signup-link a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
