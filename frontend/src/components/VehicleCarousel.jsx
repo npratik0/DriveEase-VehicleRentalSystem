@@ -128,7 +128,7 @@ const VehicleCarousel = () => {
           <p><strong>Brand:</strong> {car.brand}</p>
           <p><strong>Model:</strong> {car.model}</p>
           <p><strong>Year:</strong> {car.year}</p>
-          <p><strong>Price:</strong> ${car.price}/day</p>
+          <p><strong>Price:</strong> {car.price}/day</p>
           <p><strong>Seats:</strong> {car.seats}</p>
           <p><strong>Fuel:</strong> {car.fuel}</p>
           <p><strong>Transmission:</strong> {car.transmission}</p>

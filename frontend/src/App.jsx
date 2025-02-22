@@ -15,6 +15,7 @@ import AdminDrivers from "./components/AdminDrivers";
 import AdminLogin from "./components/AdminLogin";
 import AdminVehicles from "./components/AdminVehicles";
 import VehicleCarousel from "./components/VehicleCarousel";
+import Profile from "./components/Profile";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/hiredriver" element={<DriverCard/>}></Route>
         <Route path="/vehiclecarousel/:id" element={<VehicleCarousel/>}></Route>
+        <Route path="/profile" element={<Profile/>}></Route>
         {/* <Route path="/admin" element={<AdminPage/>}/> */}
 
         <Route path="/admin" element={<AdminLogin />} />

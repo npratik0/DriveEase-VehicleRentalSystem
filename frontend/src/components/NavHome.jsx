@@ -31,12 +31,13 @@
 // export default NavHome;
 
 import { useState } from "react";
-import ProfileDropdown from "./Unused/ProfileDropdown";
+// import ProfileDropdown from "./Unused/ProfileDropdown";
 import { FaUserCircle, FaBars } from "react-icons/fa"; // Import FaBars for mobile menu
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavHome = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const [mobileMenu, setMobileMenu] = useState(false); // Track mobile menu state
 
   return (
@@ -54,11 +55,16 @@ const NavHome = () => {
           <li><Link to="/hiredriver" className="hover:underline">Hire a Driver</Link></li>
           <li><Link to="/about" className="hover:underline">About</Link></li>
           <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
+          {/* <li><Link to="/profile" className="hover:underline">Profile</Link></li> */}
+
         </ul>
 
-        <div className="relative">
-          <FaUserCircle size={30} className="text-white-600 cursor-pointer" onClick={() => setOpen(!open)} />
-          {open && <ProfileDropdown />}
+        <div>
+          <FaUserCircle
+            size={30}
+            className="text-white-600 cursor-pointer"
+            onClick={() => navigate("/profile")} // Navigate to the profile page
+          />
         </div>
       </div>
     </nav>
