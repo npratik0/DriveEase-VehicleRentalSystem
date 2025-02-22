@@ -16,6 +16,7 @@ import AdminLogin from "./components/AdminLogin";
 import AdminVehicles from "./components/AdminVehicles";
 import VehicleCarousel from "./components/VehicleCarousel";
 import Profile from "./components/Profile";
+import BookingConfirmation from "./components/BookingConfirmation";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/hiredriver" element={<DriverCard/>}></Route>
         <Route path="/vehiclecarousel/:id" element={<VehicleCarousel/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
+        <Route path="/booking-confirmation" element={<BookingConfirmation/>}></Route>
         {/* <Route path="/admin" element={<AdminPage/>}/> */}
 
         <Route path="/admin" element={<AdminLogin />} />
