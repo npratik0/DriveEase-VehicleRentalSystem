@@ -9,7 +9,7 @@ const AdminLogin = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     if (username === "admin" && password === "admin123") {
-      navigate("/admin/dashboard");
+      navigate("/admin/page");
     } else {
       alert("Invalid credentials!");
     }

@@ -37,7 +37,8 @@ function App() {
         {/* <Route path="/admin" element={<AdminPage/>}/> */}
 
         <Route path="/admin" element={<AdminLogin />} />
-        <Route path="/admin/dashboard" element={<AdminPage />} />
+        <Route path="/admin/page" element={<AdminPage />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/vehicles" element={<AdminVehicles />} />
         <Route path="/admin/drivers" element={<AdminDrivers />} />
         
