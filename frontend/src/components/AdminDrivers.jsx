@@ -183,7 +183,7 @@ const AdminDrivers = () => {
           <button type="submit" className="mt-6 px-4 py-2 bg-blue-600 text-white rounded w-full hover:bg-blue-700">Add Driver</button>
         </form>
 
-        <h2 className="text-xl font-bold mt-8">Driver List</h2>
+        {/* <h2 className="text-xl font-bold mt-8">Driver List</h2>
         <div className="mt-4">
           {drivers.length === 0 ? (
             <p>No drivers added yet.</p>
@@ -197,7 +197,7 @@ const AdminDrivers = () => {
               ))}
             </ul>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

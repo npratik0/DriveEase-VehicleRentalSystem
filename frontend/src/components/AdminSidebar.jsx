@@ -14,6 +14,9 @@ const AdminSidebar = ({ active }) => {
         <li className={`p-3 ${active === "drivers" ? "bg-gray-700" : ""}`}>
           <Link to="/admin/drivers">Drivers</Link>
         </li>
+        <li className={`p-3 ${active === "update-driver" ? "bg-gray-700" : ""}`}>
+          <Link to="/admin/update-driver">Update Drivers</Link>
+        </li>
         
       </ul>
     </div>

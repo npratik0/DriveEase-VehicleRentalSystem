@@ -17,6 +17,10 @@ import AdminVehicles from "./components/AdminVehicles";
 import VehicleCarousel from "./components/VehicleCarousel";
 import Profile from "./components/Profile";
 import BookingConfirmation from "./components/BookingConfirmation";
+import AdminUpdateDrivers from "./components/AdminUpdateDriver";
+import DriverPage from "./components/DriverPage";
+import DriverCarousel from "./components/DriverCarousel";
+import DriverBooking from "./components/DriverBooking";
 
 
 function App() {
@@ -30,7 +34,9 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/hire" element={<HireDriver/>}/>
         <Route path="/home" element={<Home/>}/>
-        <Route path="/hiredriver" element={<DriverCard/>}></Route>
+        <Route path="/hiredriver" element={<DriverPage/>}></Route>
+        <Route path="/drivercarousel/:id" element={<DriverCarousel/>}></Route>
+        <Route path="/driver-booking" element={<DriverBooking/>}></Route>
         <Route path="/vehiclecarousel/:id" element={<VehicleCarousel/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
         <Route path="/booking-confirmation" element={<BookingConfirmation/>}></Route>
@@ -41,6 +47,7 @@ function App() {
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/vehicles" element={<AdminVehicles />} />
         <Route path="/admin/drivers" element={<AdminDrivers />} />
+        <Route path="/admin/update-driver" element={<AdminUpdateDrivers />} />
         
         
       </Routes>
