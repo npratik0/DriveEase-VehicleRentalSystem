@@ -9,8 +9,10 @@ import cors from "cors";
 // const vehicleRoutes = require('./routes/vehicleRoutes');
 import { vehicleRouter } from "./route/vehicle/vehicleRoutes.js";
 import { driverRouter } from "./route/driver/driverRoutes.js";
+import { bookingRouter } from "./route/Booking/bookingRoutes.js";
 import path from 'path';
 import { fileURLToPath } from "url";
+import "./models/associations.js"
 
 dotenv.config();
 
@@ -27,6 +29,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use('/api', vehicleRouter);
+
+app.use('/api', bookingRouter);
 
 
 // app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
