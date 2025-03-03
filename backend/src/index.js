@@ -10,6 +10,7 @@ import cors from "cors";
 import { vehicleRouter } from "./route/vehicle/vehicleRoutes.js";
 import { driverRouter } from "./route/driver/driverRoutes.js";
 import { bookingRouter } from "./route/Booking/bookingRoutes.js";
+import { driverBookingRouter } from "./route/driverBooking.js/driverBookingRouter.js";
 import path from 'path';
 import { fileURLToPath } from "url";
 import "./models/associations.js"
@@ -31,6 +32,8 @@ app.use(bodyParser.json());
 app.use('/api', vehicleRouter);
 
 app.use('/api', bookingRouter);
+
+app.use('/api', driverBookingRouter)
 
 
 // app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
