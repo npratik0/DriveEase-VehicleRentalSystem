@@ -4,14 +4,14 @@ import NavHome from "./NavHome";
 
 const BookingConfirmation = () => {
   const { state } = useLocation();
-  const { car, startDate, endDate, totalPrice, userId } = state; // Include userId
+  const { car, startDate, endDate, totalPrice, userId } = state; 
   const navigate = useNavigate();
 
   const handleConfirm = async () => {
     try {
       const bookingDetails = {
-        carId: car.id, // Ensure this matches the car ID in your database
-        userId, // Include the userId
+        carId: car.id, 
+        userId, 
         startDate,
         endDate,
         totalPrice,
@@ -49,7 +49,7 @@ const BookingConfirmation = () => {
           <p><strong>Name:</strong> {car.name}</p>
           <p><strong>Brand:</strong> {car.brand}</p>
           <p><strong>Model:</strong> {car.model}</p>
-          <p><strong>Price per Day:</strong> ${car.price}</p>
+          <p><strong>Price per Day:</strong> NRP{car.price}</p>
         </div>
 
         {/* Booking Details */}
@@ -57,7 +57,7 @@ const BookingConfirmation = () => {
           <h3 className="text-xl font-semibold text-gray-800 mb-4">Booking Details</h3>
           <p><strong>Start Date:</strong> {new Date(startDate).toLocaleDateString()}</p>
           <p><strong>End Date:</strong> {new Date(endDate).toLocaleDateString()}</p>
-          <p><strong>Total Price:</strong> ${totalPrice}</p>
+          <p><strong>Total Price:</strong> NRP{totalPrice}</p>
         </div>
 
         {/* Confirm Button */}

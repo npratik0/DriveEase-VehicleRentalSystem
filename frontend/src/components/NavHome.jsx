@@ -1,35 +1,3 @@
-// import { useState } from "react";
-// import ProfileDropdown from "./Unused/ProfileDropdown";
-// import { FaUserCircle } from "react-icons/fa";
-// import { Link } from "react-router-dom";
-
-// const NavHome = () => {
-//   const [open, setOpen] = useState(false);
-
-
-//   return (
-//     <nav className="bg-blue-600 text-white p-4 shadow-md">
-//       <div className="container mx-auto flex justify-between items-center">
-//         <h1 className="text-2xl font-bold">DriveEase</h1>
-//         <ul className="flex space-x-6">
-//           <li><Link to="/" className="hover:underline">Home</Link></li>
-//           <li><Link to="/hiredriver" className="hover:underline">Hire a Driver</Link></li>
-      
-//           <li><Link to="/about" className="hover:underline">About</Link></li>
-//           <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
-          
-//         </ul>
-//         <div className="relative">
-//         <FaUserCircle size={30} className="text-white-600 cursor-pointer" onClick={() => setOpen(!open)} />
-//         {open && <ProfileDropdown />}
-//       </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default NavHome;
-
 import { useState } from "react";
 // import ProfileDropdown from "./Unused/ProfileDropdown";
 import { FaUserCircle, FaBars } from "react-icons/fa"; // Import FaBars for mobile menu
@@ -51,7 +19,7 @@ const NavHome = () => {
 
         {/* Desktop Menu */}
         <ul className={`flex space-x-6 ${mobileMenu ? "flex-col absolute top-16 left-0 w-full bg-blue-600 p-4" : "hidden lg:flex"}`}>
-          <li><Link to="/" className="hover:underline">Home</Link></li>
+          <li><Link to="/home" className="hover:underline">Home</Link></li>
           <li><Link to="/hiredriver" className="hover:underline">Hire a Driver</Link></li>
           <li><Link to="/about" className="hover:underline">About</Link></li>
           <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>

@@ -52,7 +52,7 @@ const Sidebar = ({ onFilterChange }) => {
 
         {/* Price Range Slider */}
         <div className="mb-4">
-          {!collapsed && <label className="block font-medium mb-1 flex items-center gap-2 text-gray-300"><FaCogs /> Price Range: ${filters.price}</label>}
+          {!collapsed && <label className="block font-medium mb-1 flex items-center gap-2 text-gray-300"> Price Range: NRP{filters.price}</label>}
           <input
             type="range"
             name="price"

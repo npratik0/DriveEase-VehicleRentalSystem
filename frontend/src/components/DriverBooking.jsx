@@ -4,14 +4,14 @@ import NavHome from "./NavHome";
 
 const DriverBooking = () => {
   const { state } = useLocation();
-  const { driver, startDate, endDate, totalPrice, userId } = state; // Include userId
+  const { driver, startDate, endDate, totalPrice, userId } = state; 
   const navigate = useNavigate();
 
   const handleConfirm = async () => {
     try {
       const bookingDetails = {
-        driverId: driver.id, // Ensure this matches the driver ID in your database
-        userId, // Include the userId
+        driverId: driver.id, 
+        userId, 
         startDate,
         endDate,
         totalPrice,
@@ -28,7 +28,7 @@ const DriverBooking = () => {
       if (response.ok) {
         const data = await response.json();
         console.log("Driver booking successful:", data);
-        navigate("/home"); // Redirect to home or another page
+        navigate("/home"); // Redirect to home 
       } else {
         console.error("Driver booking failed:", response.statusText);
       }
@@ -50,7 +50,7 @@ const DriverBooking = () => {
           <p><strong>Phone:</strong> {driver.phone}</p>
           <p><strong>Experience:</strong> {driver.experience} years</p>
           <p><strong>Vehicle Type:</strong> {driver.vehicleType}</p>
-          <p><strong>Price per Day:</strong> ₹1500</p>
+          <p><strong>Price per Day:</strong> NRP1500</p>
         </div>
 
         {/* Booking Details */}
@@ -58,7 +58,7 @@ const DriverBooking = () => {
           <h3 className="text-xl font-semibold text-gray-800 mb-4">Booking Details</h3>
           <p><strong>Start Date:</strong> {new Date(startDate).toLocaleDateString()}</p>
           <p><strong>End Date:</strong> {new Date(endDate).toLocaleDateString()}</p>
-          <p><strong>Total Price:</strong> ₹{totalPrice}</p>
+          <p><strong>Total Price:</strong> NRP{totalPrice}</p>
         </div>
 
         {/* Confirm Button */}

@@ -1,28 +1,3 @@
-// import React, { useState } from "react";
-// // import AdminSidebar from "../components/AdminSidebar";
-// // import AdminDashboard from "../components/AdminDashboard";
-// // import VehicleManagement from "../components/VehicleManagement";
-// // import DriverManagement from "../components/DriverManagement";
-// import AdminSidebar from "./AdminSidebar";
-// import AdminDashboard from "./AdminDashboard";
-// import VehicleManagement from "./VehicleManagement";
-// import DriverManagement from "./DriverManagement";
-
-// const AdminPage = () => {
-//   const [activeSection, setActiveSection] = useState("dashboard");
-
-//   return (
-//     <div className="flex">
-//       <AdminSidebar setActiveSection={setActiveSection} />
-//       {activeSection === "dashboard" && <AdminDashboard />}
-//       {activeSection === "vehicles" && <VehicleManagement />}
-//       {activeSection === "drivers" && <DriverManagement />}
-//     </div>
-//   );
-// };
-
-// export default AdminPage;
-
 import { useState } from "react";
 import { FaUserCircle, FaSignOutAlt, FaEdit } from "react-icons/fa";
 import AdminSidebar from "./AdminSidebar";
@@ -32,7 +7,7 @@ const AdminPage = () => {
   const [adminDetails, setAdminDetails] = useState({
     username: "admin",
     email: "admin@example.com",
-    password: "12345",
+    password: "admin123",
   });
 
   const [editMode, setEditMode] = useState(false);

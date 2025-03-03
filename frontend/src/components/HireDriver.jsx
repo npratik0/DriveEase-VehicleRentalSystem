@@ -1,25 +1,27 @@
-import nirjalImage from '../assets/nirjal.jpg'
+import sitaImage from '../assets/download.jpg'
+import ramImage from '../assets/download (3).jpg'
+import bikashImage from '../assets/images.jpg'
 const drivers = [
     {
       id: 1,
       name: "Ram Shrestha",
       experience: "5 years",
       rating: "⭐️⭐️⭐️⭐️⭐️",
-    //   image: "/assets/driver1.jpg", // Add driver images in the assets folder
+      image: ramImage, // Add driver images in the assets folder
     },
     {
       id: 2,
-      name: "Nirjal Adhikari",
-      experience: "Learner",
+      name: "Sita",
+      experience: "2 years",
       rating: "⭐️⭐️⭐️⭐️",
-      image: nirjalImage,
+      image: sitaImage,
     },
     {
       id: 3,
       name: "Bikash Thapa",
       experience: "7 years",
       rating: "⭐️⭐️⭐️⭐️⭐️",
-    //   image: "/assets/driver3.jpg",
+      image: bikashImage,
     },
   ];
   
